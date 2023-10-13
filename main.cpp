@@ -23,6 +23,15 @@ void PrintCarsPerYear(const Car cars[], size_t size, unsigned int year);
 void SelectionSort(Car cars[], size_t n);
 void ReadCar(istream& input, Car& car);
 void WriteCar(ostream& output, const Car& car);
+/**
+ * It runs a binary search on the array of Car cars, finds a car with the
+ * value of year
+ * @param cars the array of cars
+ * @param size the size of the array
+ * @param year the year we are searching for
+ * @return the position of the car that was found or -1 if no car was found with that year
+ */
+int CarBinarySearch(const Car cars[], size_t size, unsigned int year);
 int main() {
     stringstream cars(
             "Toyota 2023\n"
